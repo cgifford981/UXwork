@@ -28,7 +28,7 @@ header
 	background-color: black;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
-	border-bottom-color: solid white;
+	
 }
 .logo
 {
@@ -96,8 +96,8 @@ li.dropdown
 */
 .coverphoto
 {
-	min-height: 800px;
-	background:url('headerimage1.jpeg') no-repeat;
+	min-height: 200px;
+	background:url('headerimage3.jpeg') no-repeat;
 	background-size: cover;
 	text-align: left;
 	color: white;
@@ -146,21 +146,6 @@ li.dropdown
 }
 /*
  ========================================
- Homepage Image
- ========================================
-*/
-.image{
-	
-	width: 40%;
-	height: 80%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5%;
-
-}
-/*
- ========================================
  Footer
  ========================================
 */
@@ -199,89 +184,61 @@ footer
 		padding-right: 20px;
 		padding-bottom: 10px;
 }
-/*
- ========================================
- Year 4
- ========================================
-*/
-#year4content
-{
-  padding: 1%	  
-}
-/*
- ========================================
- Year 1
- ========================================
-*/
-#year1content
-{
-  padding: 1%	  
+
+
+
+
+
+* {
+  box-sizing: border-box;
 }
 
-/*
- ========================================
- Year 2
- ========================================
-*/
-#year2content
-{
-  padding: 1%	  
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+  font-size: 30px;
 }
 
-/*
- ========================================
- Year 3
- ========================================
-*/
-#year3content
-{
-  padding: 1%	  
-}
-/*
- ========================================
- Staff
- ========================================
-*/
-#staffcontent
-{
-  padding: 1%	  
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+padding: 20px;
 }
 
-/*
- ========================================
- Course Overview
- ========================================
-*/
-
-.ull{
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    
-    background-color: lightgrey;
-    
-    
-    padding-top: 10%;
-
-    
-    
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.liaa {
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
     display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    padding-top: 40px;
+    margin-bottom: 20px;
+  }
 }
 
-#border{
-	border-left-style: solid;
-    border-left-color: black;
-    border-left-width: 5px;
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
-.backimage{
-	height: 100%;
-	width: 100%;
+
+.imglogos {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.reducedtextsize{
+  font-size: 22px;
+  padding: 5px; 
 }
